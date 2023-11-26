@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-align: center;
+            font-size: 2rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="assets/img/estrella.jpg" onclick="boton();">
+        
+        <a href="problema-2.html" rel="_blank">Ir al siguiente Problema</a>
+    </div>
+    <script>
+        apretar = 0
+        function boton(){
+            apretar++;
+            if(apretar == 1){
+                imagen = document.querySelector('img');
+                imagen.style.border = '10px solid blue';
+            } else{
+                imagen = document.querySelector('img');
+                imagen.style.border = '0px solid blue';
+                apretar = 0;
+            }
+        }
+    </script>
+</body>
+</html>
